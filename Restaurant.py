@@ -20,6 +20,14 @@ class Restaurant():
          print(f"Restaurant: {self.restaurant}")
          print(f"Ratings: {self.rating} star(s)")
     name = property(get_Restaurant_name,set_Restaurant_name)
+
+    def decorator(func):
+        return func
+    def Restaurant_average_star_rating(rating):
+        total_sum = rating[0]
+        return lambda total_sum,rating:(total_sum + rating) / len(rating)
+    decorator(Restaurant_average_star_rating)
+            
 #Returning list of reviews
 """ R1 = Restaurant()
 R1.all_reviews("Robinson","Villa Rossa Kempinski",5) """

@@ -24,6 +24,16 @@ class Restaurants():
         self.rating =int(rating)
         print(f"Restaurant: {self.Restaurant}")
         print(f"Rating: {self.rating}")
+    def Customer_num_reviews(reviews):
+        reviews = []
+        for review in reviews:
+            return review
+    def Customer_find_by_name(name):
+        full_name = [""]
+        for name in full_name:
+            if name == full_name:
+                return name 
+
 #Returning customer first and family name        
 """ c1 = Customer("Robinson","Okusala")
 c1.all_names() """
